@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- head는 페이지를 열 때 웹 브라우저에 표시되지 않는다.
+        title, css 링크, favicon 등을 설정할 수 있다. 
+        그 설정 중 메타데이터를 다루는 것이 <meta> 태그 -->
+    
+    <!-- metadata : 데이터를 설명하는 데이터 -->
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <!-- 페이지 리로드를 나타낸다 -->
+        <!-- http-equiv : 문서의 초기 정보를 나타낸다.
+            기본언어(content-language), MIME 타입(content-type), 기본 스타일시트(default-style), 브라우저호환성설정(X-UA-Compatible), 페이지 리로드(refresh) 등을 나타낼 수 있다.
+            content 안에는 해당 http-equiv관련 내용
+            ex ) <meta http-equiv="content-language" content="ko"> -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <!-- name : 메타데이터의 이름을 지정한다 -->
+        <!-- application-name 
+            author 
+            description 
+            generator 
+            keywords 
+            viewport -->
+        
+        <!-- viewport
+            - width=device-width부분은 장치의 화면 너비를 따르도록 페이지 너비를 설정합니다 (장치에 따라 다름).
+            - initial-scale=1.0부분은 브라우저에서 페이지를 처음로드 할 때 초기 확대 / 축소 수준을 설정합니다.
+            - 과거에 사용되던 리사이즈가 안되게 막던 부분들은 모바일브라우저들이 처리가 안되도록 막았으므로 작성하지 않으셔도 됩니다.
+            minimum-scale=1.0은 최소사이즈를 1.0으로 처리해서 축소를 못하게 막습니다.
+            maximum-scale=1.0은 최대사이즈를 1.0으로 처리해서 확대를 못하게 막습니다.
+            user-scalable=no는 사용자크기변화를 no로 처리해서 크기변화를 못하게 막습니다.-->
+        
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
+
+
+
+<!-- 이 페이지에 들어있는 내용
+    1. 페이지가 계속 reroad 되어 움직이는 그래픽이 되도록
+    2. 뷰포트를 설정해서 크기를 설정-->
