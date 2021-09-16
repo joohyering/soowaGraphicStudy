@@ -1,0 +1,26 @@
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+canvas {
+  background: #eee;
+}
+
+/*canvas 는 페이지에 그래픽적인 요소를 그릴 때 사용되는 html5 의 새로운 태그이다.
+먼저 html 문서에 다음과 같이 <canvas> 를 삽입한다.
+<canvas id="test" width="150" height="150"></canvas>
+위의 요소를 js를 통해 찾아 제어하는 것이 canvas 의 기본적인 동작이다.*/
+
