@@ -16,7 +16,7 @@ body {
 }
 
 canvas {
-  background: #eee;
+  background: rgba(238, 238, 238, 0);
 }
 
 /*canvas 는 페이지에 그래픽적인 요소를 그릴 때 사용되는 html5 의 새로운 태그이다.

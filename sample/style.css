@@ -15,6 +15,20 @@ div.first{
       height: 600px;
       margin-left: 10%;
       float: left;}
+
+      div.first div.one canvas.canvas {
+        background: rgba(238, 238, 238, 0);
+        float: left;
+        width : 50%;
+        height: 100%;
+      }
+
+      div.first div.one video.videoPlayer {
+        width : 50%;
+        height : 100%;
+        float: left;
+      }
+
   
   div.first div.two {
       margin-top: 50px;
