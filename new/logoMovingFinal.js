@@ -5,8 +5,16 @@ const context = canvas.getContext('2d');
 
 const imgElem = new Image();
 
+var bool = confirm('?');
 
-imgElem.src = './images/logo_inf.png';
+if (bool == 0) {
+  imgElem.src = './images/logo_inf.png';
+}
+
+else {
+  imgElem.src = './images/logo_inf_yellow.png';
+}
+
 imgElem.addEventListener('load', () => {
 
 
