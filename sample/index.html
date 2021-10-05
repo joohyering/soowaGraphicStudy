@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,12 +8,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title></title>
-        <link rel="stylesheet" href="{% static 'style_new.css'%}">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
   
       <div class="first">
-          <div class="one">
+        <div class="one">
+            <video id="video" width="800" height="600" autoplay=""></video>
+            <canvas id="canvas" ></canvas>
+            <canvas id="canvas2" ></canvas>
+        </div>
+        <script src="./webcam.js"></script>
+        <script src="./logoMovingFinal.js"></script>
+
+
+          <!-- <div class="one">
             <canvas class="canvas" width="600" height="400">
             </canvas>
             <video
@@ -23,7 +32,7 @@
               id="player"
               class = "videoPlayer"
               >
-              </video>    <!-- 이 video tag를 통해 webcam feed를 재생합니다. -->
+              </video>    
               <script>
                 // video tag의 DOM element를 player로 지정합니다.
                 var player = document.getElementById("player");
@@ -36,10 +45,17 @@
                   // 현재 사용중인 브라우저 객체(navigator)의 mediaDevices 인터페이스를
                   // 이용하여 사용자의 미디어 입력장치 사용권한을 받습니다.
               </script>
-            <script src="./logoMovingFinal.js"></script>
+            
+
+            <video id="webcam" class="cam" autoplay playsinline width="640" height="480"></video>
+            <canvas id="canvas" class="d-none"></canvas>
+            <audio id="snapSound" src="audio/snap.wav" preload = "auto"></audio>
+            <script src="./webcam_demo.js"></script>
             
             
-          </div>
+          </div> -->
+
+
           <div class="two">
             <!--여기에 링크 걸어서 사용하면 됨-->
             <p class="sampleTxt"> <a href="http://127.0.0.1:8000/new2">당신은 사랑받기 위해 태어난 사람</a></p>

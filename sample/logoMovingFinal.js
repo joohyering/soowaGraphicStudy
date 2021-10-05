@@ -1,19 +1,6 @@
 
 
-const canvas = document.querySelector('.canvas');
-const context = canvas.getContext('2d');
 
-const imgElem = new Image();
-
-var bool = confirm('?');
-
-if (bool == 0) {
-  imgElem.src = './images/logo_inf.png';
-}
-
-else {
-  imgElem.src = './images/logo_inf_yellow.png';
-}
 
 
 // if (gesture_id <= 1) {
@@ -28,6 +15,32 @@ else {
 //   imgElem.src = './images/logo_inf_yellow.png';
 // }
 
+
+const imgElem = new Image();
+
+var color = prompt("pink or yellow?");
+
+if (color == "pink") {
+  imgElem.src = './images/logo_inf.png';
+}
+
+else {
+  imgElem.src = './images/logo_inf_yellow.png';
+}
+
+  // var bool = confirm('?');
+
+  // if (bool == 0) {
+  //   imgElem.src = './images/logo_inf.png';
+  // }
+
+  // else {
+  //   imgElem.src = './images/logo_inf_yellow.png';
+  // }
+
+
+var canvas2 = document.getElementById('canvas2'),
+context2 = canvas2.getContext('2d');
 imgElem.addEventListener('load', () => {
 
 
@@ -39,24 +52,24 @@ imgElem.addEventListener('load', () => {
   //문제 : 변수가 매번 호출된다는 점 ..
   //drawInit이랑 draw로 나눌까?
 
-  function draw(drawX, drawY, randScale) {
-    context.clearRect(drawX, drawY, randScale, randScale);
-    context.drawImage(imgElem, drawX, drawY, randScale, randScale);
+  function drawItem(drawX, drawY, randScale) {
+    context2.clearRect(drawX, drawY, randScale, randScale);
+    context2.drawImage(imgElem, drawX, drawY, randScale, randScale);
     drawY -= 3;
 
     if (drawY <= -1 * randScale) {
       return;
     }
-    console.log(drawY);
+    // console.log(drawY);
 
-    requestAnimationFrame(draw.bind(window, drawX, drawY, randScale));
+    requestAnimationFrame(drawItem.bind(window, drawX, drawY, randScale));
   }
 
   function drawInit() {
-    x = Math.random() * 600;
-    y = Math.random() * 400;
+    x = Math.random() * 800;
+    y = Math.random() * 600;
     s = (Math.random() * 100) + 50;
-    draw (x, y, s);
+    drawItem (x, y, s);
   }
 
   drawInit();
@@ -66,6 +79,8 @@ imgElem.addEventListener('load', () => {
 
 
 });
+
+
 
 
 /*
