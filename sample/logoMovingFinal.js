@@ -24,8 +24,12 @@ if (color == "pink") {
   imgElem.src = './images/logo_inf.png';
 }
 
-else {
+else if (color == "yellow") {
   imgElem.src = './images/logo_inf_yellow.png';
+}
+
+else {
+  imgElem.src = './images/heart.png';
 }
 
   // var bool = confirm('?');
@@ -53,7 +57,7 @@ imgElem.addEventListener('load', () => {
   //drawInit이랑 draw로 나눌까?
 
   function drawItem(drawX, drawY, randScale) {
-    context2.clearRect(drawX, drawY, randScale, randScale);
+    context2.clearRect(drawX, drawY+20 , randScale, randScale);
     context2.drawImage(imgElem, drawX, drawY, randScale, randScale);
     drawY -= 3;
 
@@ -68,7 +72,7 @@ imgElem.addEventListener('load', () => {
   function drawInit() {
     x = Math.random() * 800;
     y = Math.random() * 600;
-    s = (Math.random() * 100) + 50;
+    s = (Math.random() * 40) + 30;
     drawItem (x, y, s);
   }
 
