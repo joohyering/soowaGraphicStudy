@@ -1,15 +1,30 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title></title>
-        <link rel="stylesheet" href="waiting.css">
+        <link rel="stylesheet" href="./waiting.css">
     </head>
     <body>
-      <script type="module" src="text.js"></script>
-      <script type="module" src="waiting.js"></script>
+  
+        <div style="position: relative;">
+        <img src="./images/waiting_2.png" width="800" height="auto">
+        <canvas id="canvas" width="800" height="600" 
+          style="position: absolute; left: 0; top: 0; z-index: 0;">
+          </canvas>
+        <canvas id="canvas2" width="800" height="600" 
+          style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+        </div>
+
+        <script src="./waiting.js"></script>
+
+
     </body>
 </html>
+
+
