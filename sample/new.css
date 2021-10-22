@@ -3,13 +3,6 @@
   padding: 0;
 }
 
-canvas.canvas {
-  position: absolute;
-  float: left;
-}
-
-
-canvas.canvas2 {
-  float: left;
-  position: absolute;
+div {
+  margin-left: 40px;
 }
