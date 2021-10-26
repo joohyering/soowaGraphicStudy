@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title></title>
+        <link rel="stylesheet" href="./next.css">
+    </head>
+    <body>
+
+        <video id="video" width="1" height="1" autoplay=""></video>
+        <div style="position: relative;">
+          <canvas id="canvas" width="900" height="800" 
+            style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+          <canvas id="canvas2" width="800" height="600" 
+            style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+          <canvas id="canvas3" width="1200" height="700" 
+            style="position: absolute; left: 0; top: 0; z-index: 2;"></canvas>
+          <video
+            class = "guide"
+            src="./images/if.mov"
+            controls
+            autoplay
+            loop
+            style = "position: absolute; left: 0; top: 40px; z-index: 0;"
+            width="auto;"
+            height="300px;"/>
+        </div>
+
+        <script src="./webcam.js"></script>
+        <script src="./logoMovingFinal.js"></script>
+        <script src="./next.js"></script>
+
+
+    </body>
+</html>
+
+

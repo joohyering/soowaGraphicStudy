@@ -11,6 +11,6 @@ context3 = canvas3.getContext('2d');
 
 mainFrame.addEventListener('load', () => {
 
-  context3.drawImage(mainFrame,0,0,1200,700);
+  context3.drawImage(mainFrame,0,0,810,630);
 
 });
