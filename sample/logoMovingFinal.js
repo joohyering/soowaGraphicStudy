@@ -29,7 +29,7 @@ else if (color == "yellow") {
 }
 
 else {
-  imgElem.src = './images/heart.png';
+  imgElem.src = './images/fingerHeart.png';
 }
 
   // var bool = confirm('?');
@@ -57,7 +57,7 @@ imgElem.addEventListener('load', () => {
   //drawInit이랑 draw로 나눌까?
 
   function drawItem(drawX, drawY, randScale) {
-    context2.clearRect(drawX, drawY+20 , randScale, randScale);
+    context2.clearRect(drawX, drawY , randScale, randScale);
     context2.drawImage(imgElem, drawX, drawY, randScale, randScale);
     drawY -= 3;
 
