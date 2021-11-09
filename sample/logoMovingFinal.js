@@ -28,7 +28,7 @@ else if (color == "yellow") {
   imgElem.src = './images/logo_inf_yellow.png';
 }
 
-else {
+else if (color == "heart") {
   imgElem.src = './images/fingerHeart.png';
 }
 
