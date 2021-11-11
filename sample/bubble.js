@@ -18,19 +18,29 @@ if (color == "light") {
 }
 
 
-var canvas2 = document.getElementById('canvas2'),
+var canvas4 = document.getElementById('canvas4');
+var canvas4_1 = document.getElementById('canvas4_1');
+var canvas4_2 = document.getElementById('canvas4_2');
+var canvas4_3 = document.getElementById('canvas4_3');
+var canvas4_4 = document.getElementById('canvas4_4');
+
 context4 = canvas4.getContext('2d');
 context4_1 = canvas4_1.getContext('2d');
 context4_2 = canvas4_2.getContext('2d');
 context4_3 = canvas4_3.getContext('2d');
 context4_4 = canvas4_4.getContext('2d');
 
+canvas4.style.width="100%";
+canvas4.style.height="100%";
+
 
 
   function bubble_1(drawX, drawY, randScale, aN) {
     context4.clearRect(drawX, drawY , randScale, randScale);
     context4.drawImage(imgElem_bubble1, drawX, drawY, randScale, randScale);
-    randScale += 3;
+    randScale += 1;
+    drawX -= 0.5;
+    drawY -= 0.5;
 
     if (randScale >= arr[aN]) {
       context4.clearRect(drawX, drawY , randScale, randScale);
@@ -44,7 +54,9 @@ context4_4 = canvas4_4.getContext('2d');
   function bubble_2(drawX, drawY, randScale, aN) {
     context4_1.clearRect(drawX, drawY , randScale, randScale);
     context4_1.drawImage(imgElem_bubble2, drawX, drawY, randScale, randScale);
-    randScale += 3;
+    randScale += 1;
+    drawX -= 0.5;
+    drawY -= 0.5;
 
     if (randScale >= arr[aN]) {
       context4_1.clearRect(drawX, drawY , randScale, randScale);
@@ -58,7 +70,9 @@ context4_4 = canvas4_4.getContext('2d');
   function bubble_3(drawX, drawY, randScale, aN) {
     context4_2.clearRect(drawX, drawY , randScale, randScale);
     context4_2.drawImage(imgElem_bubble3, drawX, drawY, randScale, randScale);
-    randScale += 3;
+    randScale += 1;
+    drawX -= 0.5;
+    drawY -= 0.5;
 
     if (randScale >= arr[aN]) {
       context4_2.clearRect(drawX, drawY , randScale, randScale);
@@ -72,7 +86,9 @@ context4_4 = canvas4_4.getContext('2d');
   function bubble_4(drawX, drawY, randScale, aN) {
     context4_3.clearRect(drawX, drawY , randScale, randScale);
     context4_3.drawImage(imgElem_bubble4, drawX, drawY, randScale, randScale);
-    randScale += 3;
+    randScale += 1;
+    drawX -= 0.5;
+    drawY -= 0.5;
 
     if (randScale >= arr[aN]) {
       context4_3.clearRect(drawX, drawY , randScale, randScale);
@@ -86,7 +102,9 @@ context4_4 = canvas4_4.getContext('2d');
   function bubble_5(drawX, drawY, randScale, aN) {
     context4_4.clearRect(drawX, drawY , randScale, randScale);
     context4_4.drawImage(imgElem_bubble5, drawX, drawY, randScale, randScale);
-    randScale += 3;
+    randScale += 1;
+    drawX -= 0.5;
+    drawY -= 0.5;
 
     if (randScale >= arr[aN]) {
       context4_4.clearRect(drawX, drawY , randScale, randScale);
@@ -104,12 +122,12 @@ context4_4 = canvas4_4.getContext('2d');
     lightNum = Math.random() * 10;
 
     if (arrNum <1000) {
-      arr[arrNum] = s * 1.3;
+      arr[arrNum] = s * 1.2;
       arrNum += 1;
     }
     else {
       arrNum = 0;
-      arr[arrNum] = s * 1.3;
+      arr[arrNum] = s * 1.2;
       arrNum += 1;
     }
     
@@ -134,7 +152,7 @@ context4_4 = canvas4_4.getContext('2d');
 
   drawInit();
 
-  setInterval(drawInit, 400);
+  setInterval(drawInit, 800);
 
   //크기를 저장해야 한다. 배열 돌아가면서 인덱싱 해서 넣도록 !! 1.3배까지 커지다가 사라지도록 하자
 

@@ -16,6 +16,7 @@
         <div style="position: relative;">
           <canvas id="canvas" width="650" height="470" 
             style="position: absolute; left: 500px; top: 100px; z-index: 0;"></canvas>
+        
           <canvas id="canvas2" width="650" height="470" 
             style="position: absolute; left: 500px; top: 100px; z-index: 1;"></canvas>
           <canvas id="canvas2_1" width="650" height="470" 
@@ -29,23 +30,35 @@
           <div class="canvas3" id="divFrame" width="2400" height="1400" 
             style="position: absolute; left: 0; top: 0; z-index: 2;">
             <img class="frame"
-                src="./images/new_frame.png"></div>
-          <canvas id="canvas4" width="1200" height="650" 
+                src="./images/morningFrame.png"></div>
+          <canvas id="canvas4" width="1250" height="700"
             style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
-          <canvas id="canvas4_1" width="1200" height="650" 
+          <canvas id="canvas4_1" width="1250" height="700"
+            style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
+          <canvas id="canvas4_2" width="1250" height="700"
+            style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
+          <canvas id="canvas4_3" width="1250" height="700"
+            style="position: absolute;left: 0; top: 0; z-index: 3;"></canvas>
+          <canvas id="canvas4_4" width="1250" height="700"
+            style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
+          <canvas id="canvas5" width="1200" height="650" 
           style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
-          <canvas id="canvas4_2" width="1200" height="650" 
-          style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
-          <canvas id="canvas4_3" width="1200" height="650" 
-          style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
-          <canvas id="canvas4_4" width="1200" height="650" 
-          style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
+          <video
+            class = "guide"
+            src="./images/if.mov"
+            controls
+            autoplay
+            loop
+            style = "position: absolute; left: 78px; top:182px; z-index: 3;"
+            width="auto;"
+            height="450px;"/>
         </div>
 
         <script src="./webcam.js"></script>
         <script src="./logoMovingFinal.js"></script>
         <script src="./lightVersion2.js"></script>
         <script src="./bubble.js"></script>
+        <script src="./sequence.js"></script>
 
 
     </body>
