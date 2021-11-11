@@ -62,6 +62,7 @@ imgElem.addEventListener('load', () => {
     drawY -= 3;
 
     if (drawY <= -1 * randScale) {
+      context2.clearRect(drawX, drawY , randScale, randScale);
       return;
     }
     // console.log(drawY);

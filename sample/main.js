@@ -1,6 +1,6 @@
 
 const mainFrame = new Image();
-mainFrame.src = './images/frame.png';
+mainFrame.src = './images/new_frame.png';
 
 // const mainButton = new Image();
 // mainFrame.src = './images/button.png';
@@ -11,6 +11,6 @@ context3 = canvas3.getContext('2d');
 
 mainFrame.addEventListener('load', () => {
 
-  context3.drawImage(mainFrame,0,0,810,630);
+  context3.drawImage(mainFrame,0,0,2400,1400);
 
 });

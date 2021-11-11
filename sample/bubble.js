@@ -1,16 +1,4 @@
 
-// if (gesture_id <= 1) {
-//   imgElem.src = './images/logo_inf.png';
-// }
-
-// else if (gesture_id <= 2) {
-//   imgElem.src = './images/logo_inf_blue.png';
-// }
-
-// else {
-//   imgElem.src = './images/logo_inf_yellow.png';
-// }
-
 
 const imgElem_bubble1 = new Image();
 const imgElem_bubble2 = new Image();
@@ -33,9 +21,9 @@ if (color == "light") {
 var canvas2 = document.getElementById('canvas2'),
 context4 = canvas4.getContext('2d');
 context4_1 = canvas4_1.getContext('2d');
-context4_2 = canvas4_1.getContext('2d');
-context4_3 = canvas4_1.getContext('2d');
-context4_4 = canvas4_1.getContext('2d');
+context4_2 = canvas4_2.getContext('2d');
+context4_3 = canvas4_3.getContext('2d');
+context4_4 = canvas4_4.getContext('2d');
 
 
 

@@ -23,7 +23,7 @@
   } );
   
   video.addEventListener('play', function() {
-    draw( this, context, 800, 600 );
+    draw( this, context, 650, 470 );
   }, false );
   
   function draw( video, context, width, height ) {
