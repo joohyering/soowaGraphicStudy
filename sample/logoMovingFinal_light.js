@@ -30,12 +30,17 @@ if (color == "light") {
 }
 
 
-var canvas2 = document.getElementById('canvas2'),
+var canvas2 = document.getElementById('canvas2');
+var canvas2_1 = document.getElementById('canvas2_1');
+var canvas2_2 = document.getElementById('canvas2_2');
+var canvas2_3 = document.getElementById('canvas2_3');
+var canvas2_4 = document.getElementById('canvas2_4');
+
 context2 = canvas2.getContext('2d');
 context2_1 = canvas2_1.getContext('2d');
-context2_2 = canvas2_1.getContext('2d');
-context2_3 = canvas2_1.getContext('2d');
-context2_4 = canvas2_1.getContext('2d');
+context2_2 = canvas2_2.getContext('2d');
+context2_3 = canvas2_3.getContext('2d');
+context2_4 = canvas2_4.getContext('2d');
 
 
 
