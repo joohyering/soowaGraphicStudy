@@ -18,8 +18,8 @@ const imgElem_light8 = new Image();
 const imgElem_light9 = new Image();
 const imgElem_light10 = new Image();
 
-var arr = new Array(1000);
-var arrNum = 0;
+var arrLight = new Array(1000);
+var arrLightNum = 0;
 
 if (color == "light") {
   imgElem_light6.src = './images/6.png';
@@ -35,12 +35,18 @@ var canvas2_1 = document.getElementById('canvas2_1');
 var canvas2_2 = document.getElementById('canvas2_2');
 var canvas2_3 = document.getElementById('canvas2_3');
 var canvas2_4 = document.getElementById('canvas2_4');
+var canvas2_5 = document.getElementById('canvas2_5');
+var canvas2_6 = document.getElementById('canvas2_6');
+var canvas2_7 = document.getElementById('canvas2_7');
 
 context2 = canvas2.getContext('2d');
 context2_1 = canvas2_1.getContext('2d');
 context2_2 = canvas2_2.getContext('2d');
 context2_3 = canvas2_3.getContext('2d');
 context2_4 = canvas2_4.getContext('2d');
+context2_5 = canvas2_5.getContext('2d');
+context2_6 = canvas2_6.getContext('2d');
+context2_7 = canvas2_7.getContext('2d');
 
 
 
@@ -51,7 +57,7 @@ context2_4 = canvas2_4.getContext('2d');
     drawX -= 1.5;
     drawY -= 1.5;
 
-    if (randScale >= arr[aN]) {
+    if (randScale >= arrLight[aN]) {
       context2.clearRect(drawX, drawY , randScale, randScale);
       return;
     }
@@ -67,7 +73,7 @@ context2_4 = canvas2_4.getContext('2d');
     drawX -= 1.5;
     drawY -= 1.5;
 
-    if (randScale >= arr[aN]) {
+    if (randScale >= arrLight[aN]) {
       context2_1.clearRect(drawX, drawY , randScale, randScale);
       return;
     }
@@ -83,7 +89,7 @@ context2_4 = canvas2_4.getContext('2d');
     drawX -= 1.5;
     drawY -= 1.5;
 
-    if (randScale >= arr[aN]) {
+    if (randScale >= arrLight[aN]) {
       context2_2.clearRect(drawX, drawY , randScale, randScale);
       return;
     }
@@ -99,7 +105,7 @@ context2_4 = canvas2_4.getContext('2d');
     drawX -= 1.5;
     drawY -= 1.5;
 
-    if (randScale >= arr[aN]) {
+    if (randScale >= arrLight[aN]) {
       context2_3.clearRect(drawX, drawY , randScale, randScale);
       return;
     }
@@ -115,7 +121,7 @@ context2_4 = canvas2_4.getContext('2d');
     drawY -= 1.5;
     randScale += 3;
 
-    if (randScale >= arr[aN]) {
+    if (randScale >= arrLight[aN]) {
       context2_4.clearRect(drawX, drawY , randScale, randScale);
       return;
     }
@@ -130,37 +136,32 @@ context2_4 = canvas2_4.getContext('2d');
     s = (Math.random() * 150) + 20;
     lightNum = Math.random() * 10;
 
-    if (arrNum <1000) {
-      arr[arrNum] = s * 1.5;
-      arrNum += 1;
+    if (arrLightNum <1000) {
+      arrLight[arrLightNum] = s * 1.5;
+      arrLightNum += 1;
     }
     else {
-      arrNum = 0;
-      arr[arrNum] = s * 1.5;
-      arrNum += 1;
+      arrLightNum = 0;
+      arrLight[arrLightNum] = s * 1.5;
+      arrLightNum += 1;
     }
     
 
 
     if (lightNum < 2) {
-      console.log(arrNum);
-      spark_1(x, y, s, arrNum);
+      spark_1(x, y, s, arrLightNum);
     }
     else if (lightNum < 4) {
-      console.log(arrNum);
-      spark_2(x, y, s, arrNum);
+      spark_2(x, y, s, arrLightNum);
     }
     else if (lightNum < 6) {
-      console.log(arrNum);
-      spark_3(x, y, s, arrNum);
+      spark_3(x, y, s, arrLightNum);
     }
     else if (lightNum < 8) {
-      console.log(arrNum);
-      spark_4(x, y, s, arrNum);
+      spark_4(x, y, s, arrLightNum);
     }
     else {
-      console.log(arrNum);
-      spark_5(x, y, s, arrNum);
+      spark_5(x, y, s, arrLightNum);
     }
   }
 
