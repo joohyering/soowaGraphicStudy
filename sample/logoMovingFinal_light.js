@@ -18,8 +18,12 @@ const imgElem_light8 = new Image();
 const imgElem_light9 = new Image();
 const imgElem_light10 = new Image();
 
+//
+
 var arrLight = new Array(1000);
 var arrLightNum = 0;
+
+//
 
 if (color == "light") {
   imgElem_light6.src = './images/6.png';
@@ -130,7 +134,7 @@ context2_7 = canvas2_7.getContext('2d');
     requestAnimationFrame(spark_5.bind(window, drawX, drawY, randScale, aN));
   }
 
-  function drawInit() {
+  function drawSparkInit() {
     x = Math.random() * 800;
     y = Math.random() * 600;
     s = (Math.random() * 150) + 20;
@@ -165,9 +169,9 @@ context2_7 = canvas2_7.getContext('2d');
     }
   }
 
-  drawInit();
+  drawSparkInit();
 
-  setInterval(drawInit, 200);
+  setInterval(drawSparkInit, 200);
 
   //크기를 저장해야 한다. 배열 돌아가면서 인덱싱 해서 넣도록 !! 1.3배까지 커지다가 사라지도록 하자
 
